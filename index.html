@@ -1,170 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Portfolio</title>
-
-  <!-- Bootstrap Core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom Fonts -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-
-  <!-- Custom CSS -->
-  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
-
+<meta charset="utf-8"/>
+<link rel="apple-touch-icon" sizes="76x76" href="./assets/img/favicon.ico">
+<link rel="icon" type="image/png" href="./assets/img/favicon.ico">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<title>Daniel Cumbor</title>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'/>
+    
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,600,700" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+<!-- CSS -->
+<link href="./assets/css/main.css" rel="stylesheet"/>
+<link href="./assets/css/vendor/aos.css" rel="stylesheet"/>
+    
 </head>
+    
+<body> 
+	<nav class="topnav navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="#"><strong>Daniel Cumbor</strong></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown-1" aria-controls="navbarNavDropdown-1" aria-expanded="false" aria-label="Toggle navigation" style=""><span class="navbar-toggler-icon"></span></button>
+			<a class="navbar-brand d-lg-none" href="./index.html"><i class="fas fa-anchor mr-2"></i><strong>Anchor UI</strong> Kit</a>
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="navbar-collapse collapse" id="navbarColor02">
+				<ul class="navbar-nav mr-auto d-flex align-items-center">
+					<li class="nav-item">
+						<a class="nav-link" href="./index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./index.html">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./index.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
-<body id="page-top">
-
-  <!-- Portfolio -->
-  <section class="content-section" id="portfolio">
-    <div class="container">
-      <div class="content-section-heading text-center">
-        <h3 class="text-secondary mb-0">Portfolio</h3>
-        <h2 class="mb-5">Daniel Cumbor</h2>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="https://github.com/Hylek/Haven">
-            <div class="caption">
-              <div class="caption-content">
-                <div class="h2">Haven (WIP)</div>
-                <p class="mb-0">A village diorama powered by GOAP AI! Made in Unity.</p>
-              </div>
+<!-- wavy header
+<div class="jumbotron jumbotron-lg jumbotron-fluid mb-0 pb-3 bg-primary position-relative">
+    <div class="container-fluid text-white h-100">
+        <div class="d-lg-flex align-items-center justify-content-between text-center pl-lg-5">
+            <div class="col pt-4 pb-4">
+                <h1 class="display-3">Hello.</h1>
+                <h5 class="font-weight-light mb-4">Welcome to my portfolio website!</strong></h5>
             </div>
-            <img class="img-fluid" src="img/wip.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="https://github.com/Hylek/InvadersGL">
-            <div class="caption">
-              <div class="caption-content">
-                <div class="h2">InvadersGL (WIP)</div>
-                <p class="mb-0">A remake of the classic arcade game. Made in OpenGL using GLFW (C++).</p>
-              </div>
+            <!--<div class="col align-self-bottom align-items-right text-right">
+                <img src="assets/img/demo/dashb2.png" class="rounded img-fluid">
             </div>
-            <img class="img-fluid" src="img/wip.jpg" alt="">
-          </a>
         </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="https://github.com/Hylek/Procedural-SpaceDiorama">
-            <div class="caption">
-              <div class="caption-content">
-                <div class="h2">Procedural Space Diorama</div>
-                <p class="mb-0">A procedurally generated solar system made in Unity. Uses crowd simulation for space fleets.</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/spacesim.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="https://github.com/Hylek/Boids-Simulation">
-            <div class="caption">
-              <div class="caption-content">
-                <div class="h2">Boids Simulation</div>
-                <p class="mb-0">A game based around simulating crowd AI. Also contains multiplayer networking. Made in Urho3D. Written in C++</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/boidsim.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="https://github.com/Hylek/PhysX-MiniGolf">
-            <div class="caption">
-              <div class="caption-content">
-                <div class="h2">PhysX MiniGolf</div>
-                <p class="mb-0">Simulation of crazy golf using PhysX API and OpenGL. Written in C++</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/golf.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="https://github.com/Hylek/Pirate-Radio">
-            <div class="caption">
-              <div class="caption-content">
-                <div class="h2">GGJ 2018 Pirate Radio</div>
-                <p class="mb-0">A Unity made VR experience made for Global Game Jam 2018.</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/pirateradio.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="https://github.com/Hylek/Tipping-Point">
-            <div class="caption">
-              <div class="caption-content">
-                <div class="h2">Tipping Point</div>
-                <p class="mb-0">Made for a local 24 game jam. Written in Python in Godot 3.0. Development Branch.</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/tp.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="https://github.com/Hylek/Driver">
-            <div class="caption">
-              <div class="caption-content">
-                <div class="h2">Driver</div>
-                <p class="mb-0">Simple Unity game, part of university dissertation to see if games interact well on smartwatches (Spoiler alert; they don't).</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/driver.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="https://github.com/Hylek/Weatherly-CrossPlatform">
-            <div class="caption">
-              <div class="caption-content">
-                <div class="h2">Weatherly</div>
-                <p class="mb-0">Crossplatform weather app created using Cordova and PhoneGapp. Written in JavaScript.</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/weatherly.jpg" alt="">
-          </a>
-        </div>
-      </div>
     </div>
-  </section>
+</div>
+<svg style="-webkit-transform:rotate(-180deg); -moz-transform:rotate(-180deg); -o-transform:rotate(-180deg); transform:rotate(-180deg); margin-top: -1px;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 1440 126" style="enable-background:new 0 0 1440 126;" xml:space="preserve">
+<path class="bg-primary" d="M685.6,38.8C418.7-11.1,170.2,9.9,0,30v96h1440V30C1252.7,52.2,1010,99.4,685.6,38.8z"/>
+</svg> -->
 
-  <!-- Footer -->
-  <footer class="footer text-center">
-    <div class="container">
-      <ul class="list-inline mb-5">
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/daniel-cumbor-28b7b3144/">
-            <i class="icon-social-linkedin"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white" href="https://github.com/Hylek">
-            <i class="icon-social-github"></i>
-          </a>
-        </li>
-      </ul>
-      <p class="text-muted small mb-0">Made with effort in 2020</p>
-    </div>
-  </footer>
+<div class="container pt-5 pb-5 mb-5">
+	<div class="row justify-content-center">
+      
+<div class="col-lg-11">
+<div id="docsarea" class="font-weight-normal">
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Portfolio Content -->
+<div class="row mb-1">
+	<div class="col-lg-6  mt-5">
+		<!-- Card Overlay -->
+		<div class="card bg-dark overlay overlay-black text-white shadow-lg border-0">
+    		<img class="card-img" src="./assets/img/demo/7.jpg" alt="Card image">
+    		<div class="card-img-overlay d-flex align-items-center text-center">
+        		<div class="card-body">
+            		<h3 class="card-title">Overlay center align</h3>
+            		<p class="card-text text-muted">
+                 		With supporting text below as a natural lead-in to additional content.
+            		</p>
+            		<a href="#" class="btn btn-info btn-round">Do anything</a>
+        		</div>
+    		</div>
+		</div>
+	</div>
+	<div class="col-lg-6  mt-5">
+		<!-- Card Overlay -->
+		<div class="card bg-dark overlay overlay-black text-white shadow-lg border-0">
+    		<img class="card-img" src="./assets/img/demo/7.jpg" alt="Card image">
+    		<div class="card-img-overlay d-flex align-items-center text-center">
+        		<div class="card-body">
+            		<h3 class="card-title">Overlay center align</h3>
+            		<p class="card-text text-muted">
+                 		With supporting text below as a natural lead-in to additional content.
+            		</p>
+            		<a href="#" class="btn btn-info btn-round">Do anything</a>
+        		</div>
+    		</div>
+		</div>
+	</div>
+	<div class="col-lg-6  mt-5">
+		<!-- Card Overlay -->
+		<div class="card bg-dark overlay overlay-black text-white shadow-lg border-0">
+    		<img class="card-img" src="./assets/img/demo/7.jpg" alt="Card image">
+    		<div class="card-img-overlay d-flex align-items-center text-center">
+        		<div class="card-body">
+            		<h3 class="card-title">Overlay center align</h3>
+            		<p class="card-text text-muted">
+                 		With supporting text below as a natural lead-in to additional content.
+            		</p>
+            		<a href="#" class="btn btn-info btn-round">Do anything</a>
+        		</div>
+    		</div>
+		</div>
+	</div>
+</div>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<!-- Portfolio Content -->
+<div class="row mb-1">
+	<div class="col-lg-6  mt-5">
+		<!-- Card Overlay -->
+		<div class="card bg-dark overlay overlay-black text-white shadow-lg border-0">
+    		<img class="card-img" src="./assets/img/demo/7.jpg" alt="Card image">
+    		<div class="card-img-overlay d-flex align-items-center text-center">
+        		<div class="card-body">
+            		<h3 class="card-title">Overlay center align</h3>
+            		<p class="card-text text-muted">
+                 		With supporting text below as a natural lead-in to additional content.
+            		</p>
+            		<a href="#" class="btn btn-info btn-round">Do anything</a>
+        		</div>
+    		</div>
+		</div>
+	</div>
+	<div class="col-lg-6  mt-5">
+		<!-- Card Overlay -->
+		<div class="card bg-dark overlay overlay-black text-white shadow-lg border-0">
+    		<img class="card-img" src="./assets/img/demo/7.jpg" alt="Card image">
+    		<div class="card-img-overlay d-flex align-items-center text-center">
+        		<div class="card-body">
+            		<h3 class="card-title">Overlay center align</h3>
+            		<p class="card-text text-muted">
+                 		With supporting text below as a natural lead-in to additional content.
+            		</p>
+            		<a href="#" class="btn btn-info btn-round">Do anything</a>
+        		</div>
+    		</div>
+		</div>
+	</div>
+</div>
 
-  <!-- Custom scripts for this template -->
-  <script src="js/stylish-portfolio.min.js"></script>
+</div>
+</div>
+</div>
+</div>
+
+<!-- minimal footer -->
+<footer class="bg-black pb-5 pt-4">
+	<div class="container">
+		<div class="row justify-content-center text-center">
+			<div class="col-md-12">			
+				<span class="d-block mt-3 text-gray">Made with effort in <strong>2021</strong>. Thanks Covid-19.</a>
+				</span>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- Javascript -->
+<script src="./assets/js/vendor/jquery.min.js" type="text/javascript"></script>
+<script src="./assets/js/vendor/popper.min.js" type="text/javascript"></script>
+<script src="./assets/js/vendor/bootstrap.min.js" type="text/javascript"></script>
+<script src="./assets/js/functions.js" type="text/javascript"></script>
 
 </body>
-
+    
 </html>
