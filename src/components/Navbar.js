@@ -35,17 +35,17 @@ function Navbar()
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/about' className='nav-links' onClick={ closeMobileMenu }>
+                            <Link to='/' className='nav-links' onClick={ closeMobileMenu }>
                                 About
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/contact' className='nav-links' onClick={ closeMobileMenu }>
+                            <Link to='/' className='nav-links' onClick={ closeMobileMenu }>
                                 Contact
                             </Link>
                         </li>
                     </ul>
-                    {button && <Button buttonStyle='btn--outline'>Sign Up</Button>}
+                    {/* {button && <Button buttonStyle='btn--outline'>Sign Up</Button>} */}
                 </div>
             </nav>
         </>
