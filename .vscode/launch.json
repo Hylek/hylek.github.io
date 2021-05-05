@@ -7,8 +7,9 @@
         {
             "type": "pwa-chrome",
             "request": "launch",
-            "name": "Open index.html",
-            "file": "c:\\Users\\dcumb\\Downloads\\startbootstrap-stylish-portfolio-gh-pages\\startbootstrap-stylish-portfolio-gh-pages\\index.html"
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:8081",
+            "webRoot": "${workspaceFolder}"
         }
     ]
 }
