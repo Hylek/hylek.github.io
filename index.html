@@ -24,109 +24,6 @@
 </head>
 
 <body id="page-top">
-
-	<div id="app-container" class="canvas-app-container">
-		<div id="canvas-container" class="canvas-app-canvas-container">
-			<canvas id="canvas" class="canvas-app-canvas" tabindex="1" width="1280" height="720"></canvas>
-		</div>
-	</div>
-	<!-- -->
-	<script id='engine-loader' type='text/javascript' src="dmloader.js"></script>
-	<!-- -->
-	<script id='engine-setup' type='text/javascript'>
-	var extra_params = {
-		archive_location_filter: function( path ) {
-			return ("archive" + path + "");
-		},
-		engine_arguments: [],
-		custom_heap_size: 268435456,
-		full_screen_container: "#canvas-container",
-		disable_context_menu: true
-	}
-
-	Module['INITIAL_MEMORY'] = extra_params.custom_heap_size;
-
-	Module['onRuntimeInitialized'] = function() {
-		Module.runApp("canvas", extra_params);
-	};
-
-	Module["locateFile"] = function(path, scriptDirectory)
-	{
-		// dmengine*.wasm is hardcoded in the built JS loader for WASM,
-		// we need to replace it here with the correct project name.
-		if (path == "dmengine.wasm" || path == "dmengine_release.wasm" || path == "dmengine_headless.wasm") {
-			path = "Sidescrollertutorial.wasm";
-		}
-		return scriptDirectory + path;
-	};
-
-	var is_iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-	var buttonHeight = 0;
-	var prevInnerWidth = -1;
-	var prevInnerHeight = -1;
-	buttonHeight = 42;
-	buttonHeight = 42;
-	function resize_game_canvas() {
-		// Hack for iOS when exit from Fullscreen mode
-		if (is_iOS) {
-			window.scrollTo(0, 0);
-		}
-
-		var app_container = document.getElementById('app-container');
-		var game_canvas = document.getElementById('canvas');
-		var innerWidth = window.innerWidth;
-		var innerHeight = window.innerHeight - buttonHeight;
-		if (prevInnerWidth == innerWidth && prevInnerHeight == innerHeight)
-		{
-			return;
-		}
-		prevInnerWidth = innerWidth;
-		prevInnerHeight = innerHeight;
-		var width = 1280;
-		var height = 720;
-		var targetRatio = width / height;
-		var actualRatio = innerWidth / innerHeight;
-	
-		//Downscale fit
-		if (innerWidth < width || innerHeight < height) {
-			if (actualRatio > targetRatio) {
-				width = innerHeight * targetRatio;
-				height = innerHeight;
-				app_container.style.marginLeft = ((innerWidth - width) / 2) + "px";
-				app_container.style.marginTop = "0px";
-			}
-			else {
-				width = innerWidth;
-				height = innerWidth / targetRatio;
-				app_container.style.marginLeft = "0px";
-				app_container.style.marginTop = ((innerHeight - height) / 2) + "px";
-			}
-		}
-		else {
-			app_container.style.marginLeft = ((innerWidth - width) / 2) + "px";
-			app_container.style.marginTop = ((innerHeight - height) / 2) + "px";
-		}
-	
-	
-	
-	
-		app_container.style.width = width + "px";
-		app_container.style.height = height + buttonHeight + "px";
-		game_canvas.width = width;
-		game_canvas.height = height;
-	}
-	resize_game_canvas();
-	window.addEventListener('resize', resize_game_canvas, false);
-	window.addEventListener('orientationchange', resize_game_canvas, false);
-	window.addEventListener('focus', resize_game_canvas, false);
-	</script>
-
-	<script id='engine-start' type='text/javascript'>
-		EngineLoader.load("canvas", "Sidescrollertutorial");
-	</script>
-
-
-
   <!-- Portfolio -->
   <section class="content-section" id="portfolio">
     <div class="container">
@@ -134,9 +31,6 @@
         <h3 class="text-secondary mb-0">Portfolio</h3>
         <h2 class="mb-5">Daniel Cumbor</h2>
         <h3 style="color: red;"><b>New website coming soon!</b></h3>
-        <p>I am a Games Developer currently working in the iGaming industry for more than 2 years. Although this role uses TypeScript it is highly similar to C# and I have used Unity since 2015 for university and personal projects. Below you will find a variety of different projects that I have worked on in my free time and during university. I have worked with Unity Engine, Godot Engine, C#, C++, TypeScript (at work), GodotScript (Godot Engine) and by extension Python. Please note that a new website is coming soon and some of my most recent projects are not listed here, but you can find them on my <a href="https://www.github.com/hylek"><b>GitHub!</b></a> I am highly motivated and during my role I have been exposed to the full game development cycle multiple times due to the smaller scope of the projects. I have completed more than 20 2D slots games during my time and have execlusively worked on more advanced projects such as Bingo, and Promotional Games. I have experience with working and communicating with back-end servers as the games in my current role require constant communication with an authoritative server.</p>
-        <p>Worked with, and contributed to a bespoke framework that is written in TypeScript and leverages web based technology (PIXI.js), it features a bespoke editor that is layed out similar to Unity. My role also functions in an Agile environment with producers that enforce deadlines that must be adheard to as these games also undergo audits that I preform. I have also performed multiple Pull Request reviews and was a mentor for 3 new starts when they first arrived. I have also performed Lead roles when the only Lead in the team was on holiday or absent, often multitasking various projects at the same time and using intiative, making sure work is distributed to team members and blockers are addressed ASAP. An example would be Apple's short timeframe for the iOS 14 release (7 days) a preview build discovered that all of our games would not work. The Lead was ill for the week and I had to assume responibility of his role quickly, using intuition to distribute the workload amongst free and reliable team members and to keep in constant communication with managers on the progress of this critical task. The work was completed on time and I was commended for my ability to step up and adapt to change when needed, and not having to be told what to do in order to solve the problems at hand.</p>
-        <p>I respond and adapt to constructive critiscm about myself and the team's processes improving efficiency where-ever possible. Experienced problem solver; I often had to pickup other team members games that were lagging behind or when they were ill and fix bugs while communicating with QA, adapting to their code style and fixing unique problems arisen from their codebase. I have also taken on projects that go outside of the scope of my role, making a christmas game that involved making a short but custom API backend and a client (website) front end that was used as a scoreboard, and a webapp for the phone that an audience member could secretly update the scoreboard with.</p>
         <br></br>
       </div>
       <div class="row no-gutters">
